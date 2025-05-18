@@ -1,12 +1,11 @@
-import { useState } from "react";
 import "./App.css";
+import HomePage from "./components/HomePage";
+import ShoppingList from "./components/ShoppingList";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
-      <h1>merhaba</h1>
+      <ShoppingList />
     </div>
   );
 }
