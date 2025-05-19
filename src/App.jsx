@@ -1,13 +1,13 @@
 import "./App.css";
 import HomePage from "./components/HomePage";
-import ShoppingList from "./components/ShoppingList";
 
-function App() {
+import { Route, Switch } from "react-router-dom";
+import ShoppingList from "./components/ShoppingList";
+export default function App() {
   return (
-    <div>
-      <ShoppingList />
-    </div>
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route path="/ShoppingList" component={ShoppingList} />
+    </Switch>
   );
 }
-
-export default App;
